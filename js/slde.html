@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Slideshow</title>
+  <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .slideshow {
+        display: flex;
+        height: 150%; /* Set height to 250% to accommodate all images stacked */
+        width: 100%;
+        transition: transform 1s ease;
+    }
+
+    img {
+        width:3000%;
+        height: 80%;
+    }
+</style>
+</head>
+<body>
+    <div class="slideshow">
+        <img src="afri1.avif" alt="Image 1">
+        <img src="testj.jpg" alt="Image 2">
+        <img src="test4.webp" alt="Image 3">
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slideshow = document.querySelector('.slideshow');
+
+            let currentIndex = 0;
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % 3;
+                const translateValue = -100 * currentIndex + '%';
+
+                if (currentIndex === 0) {
+                    slideshow.style.transition = 'transform 3s ease-in-out'; // Adjust the duration as needed
+                } else {
+                    slideshow.style.transition = 'transform 3s ease-in-out';
+                }
+
+
+                slideshow.style.transform = 'translateX(' + translateValue + ')';
+            }
+
+            setInterval(nextSlide, 5000);
+            nextSlide(); // Initialize the first slide immediately
+        });
+    </script>
+</body>
+</html >
