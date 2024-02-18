@@ -1,0 +1,265 @@
+:root {
+
+  --head-font-family: 'Playfair Display', serif;
+  --default-font-family: 'Poppins', sans-serif;
+  
+}
+.body{
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+.pic{
+  width: 100%; ;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  padding: 40;
+  border-radius: 20px;
+  margin-top: 90px;
+  margin-bottom: auto;
+}
+.container-main {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+  font-family: var(--head-font-family);
+  font-weight: bold;
+
+}
+
+.next{
+  font-size: 64px;
+  font-weight: bold;
+}
+
+i.fa-solid.fa-hands-bubbles {
+  color: var(--primary-color);
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+
+}
+
+.mb-5.text-muted {
+  font-family: var(--default-font-family);
+  font-weight: normal;
+}
+
+footer h3 {
+  font-size: 48px;
+}
+
+p.text-center.mb-5.mt-5 {
+  font-weight: 450;
+}
+
+.container-main h1 {
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.container-main p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.container-main h2 {
+  font-family: var(--head-font-family);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+a.btn.btn-branding {
+  background: var(--primary-color);
+  color:black;
+  border-radius: 40px;
+  padding: 15px 30px;
+  line-height: 27px;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+a.btn.btn-branding:hover {
+  color: white;
+  background:goldenrod;
+}
+
+a.btn.btn-branding-2:hover {
+  color: white;
+  background: goldenrod;
+}
+
+a.btn.btn-branding-2 {
+  border-radius: 30px;
+  padding: 15px 30px;
+  line-height: 27px;
+  border: 1px solid var(--primary-color);
+  font-size: 18px;
+  background-color: goldenrod;
+
+
+}
+
+div.project-description {
+  padding: 120px 60px 0;
+}
+
+@media (max-width: 900px) {
+  div.project-description {
+      padding: 60px 20px 0;
+      text-align: center;
+      margin: auto;
+  }
+
+  div.project-description.next.mb-5.mt-5 {
+      padding: 0;
+      text-align: center;
+  }
+  h2.next.mb-5.mt-5 {
+      text-align: center;
+  }
+
+  .container-main h1 {
+      font-size: 45px;
+      line-height: 2;
+      color: goldenrod;
+  }
+
+  .container-main h2 {
+  font-weight: bold;
+
+  }
+
+  .next {
+      font-size: 45px;
+  }
+
+  div.content {
+      text-align: center;
+      padding: 0;
+  }
+
+  nav a {
+      font-size: 12px;
+
+  }
+
+  div.content h1 {
+      font-size: 45px;
+      line-height: 2;
+  }
+}
+
+.content-container {
+  padding: 60px 20px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.content h3 {
+  font-size: 24px;
+  font-family: var(--default-font-family);
+  line-height: 1.5;
+  margin: 20px 0 0;
+}
+
+.content p {
+  font-size: 14px;
+  font-family: var(--default-font-family);
+  font-weight: bold;
+}
+
+.content {
+  margin: 30px;
+}
+
+
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color:goldenrod;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--testing-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-l {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-family: var(--default-font-family);
+  font-weight: bold;
+}
+
+footer .email-l:hover {
+   color: var(--primary-color);
+   transition: all 100ms ease-in-out;
+
+}
+
+footer .social-media a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-media a:hover {
+  color: white;
+  background: var(--primary-color);
+}
