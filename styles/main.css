@@ -6,12 +6,13 @@
   background-color: rgb(84, 10, 84);
   overflow-x: hidden;
 }
+
 h2 {
-  color:purple;
+  color: purple;
   font-size: 24px;
   margin-bottom: 20px;
   text-decoration: underline solid black;
-  
+
 }
 
 /* Target the ul element directly following the h2 to remove bullets and style the list */
@@ -22,7 +23,7 @@ h2+ul {
 }
 
 
-.container{
+.container {
   width: 80%;
   margin: 0 auto;
   border: 1px solid black;
@@ -87,8 +88,9 @@ h2+ul {
   min-height: 100%;
   max-width: 100%;
   border-radius: 20px;
-  
+
 }
+
 a.btn {
   display: inline-block;
   padding: 5px 10px;
@@ -99,10 +101,11 @@ a.btn {
 }
 
 a.btn:hover {
-  background-color:violet;
+  background-color: violet;
   /* Darker shade on hover */
 }
-.intro{
+
+.intro {
   color: black;
   font-size: 20px;
   margin-bottom: 20px;
@@ -110,6 +113,7 @@ a.btn:hover {
   text-align: center;
   list-style: none;
 }
+
 .project-description ul li {
   position: relative;
   padding-left: auto;
@@ -130,7 +134,7 @@ a.btn:hover {
   align-items: center;
   flex-wrap: wrap;
   /* Allow items to wrap as needed */
- 
+
 }
 
 .footer .tech-item {
@@ -152,15 +156,18 @@ a.btn:hover {
   font-size: 20px;
   /* Adjust text size as needed */
 }
+
 .footer {
   color: rgb(78, 13, 78);
   text-align: center;
   padding: 20px;
   font-size: 14px;
 }
+
 .footer h3 {
   margin-bottom: 20px;
 }
+
 .column {
   width: 100%;
 }
@@ -168,15 +175,7 @@ a.btn:hover {
 /* Tablet: Adjust columns side by side */
 @media (min-width: 768px) {
   .column {
-    width: 50%;
+    max-width: 480px;
     float: left;
-  }
-}
-
-/* Desktop: Add more space around */
-@media (min-width: 992px) {
-  .container {
-    width: 960px;
-    margin: auto;
   }
 }
