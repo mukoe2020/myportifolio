@@ -1,260 +1,162 @@
-:root {
 
-  --head-font-family: 'Playfair Display', serif;
-  --default-font-family: 'Poppins', sans-serif;
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(84, 10, 84)
+}
+h2 {
+  color:purple;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-decoration: underline solid black;
   
 }
-.body{
-  background: linear-gradient(-20deg, rgb(233, 222, 250) 0%, rgb(251, 252, 219) 100%);
-}
-.pic{
-  width: 100%; ;
-  height: 80%;
-  object-fit: cover;
-  object-position: center;
-  padding: 40;
-  border-radius: 20px;
-  margin-top: 90px;
-  margin-bottom: auto;
-}
-.container-main {
-  text-align: center;
-  padding: 80px 20px;
-}
 
-h1, h2, h3, h4, h5, h6{
-
-  font-family: var(--head-font-family);
-  font-weight: bold;
-
-}
-
-.next{
-  font-size: 64px;
-  font-weight: bold;
-}
-
-i.fa-solid.fa-hands-bubbles {
-  color: var(--primary-color);
-}
-
-p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-
-}
-
-.mb-5.text-muted {
-  font-family: var(--default-font-family);
-  font-weight: normal;
-}
-
-footer h3 {
-  font-size: 48px;
-}
-
-p.text-center.mb-5.mt-5 {
-  font-weight: 450;
-}
-
-.container-main h1 {
-  font-size: 96px;
-  font-weight: bold;
-  line-height: 1.5;
-}
-.container-main p {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.container-main h2 {
-  font-family: var(--head-font-family);
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-a.btn.btn-branding {
-  background: var(--primary-color);
-  color:black;
-  border-radius: 40px;
-  padding: 15px 30px;
-  line-height: 27px;
-  font-size: 18px;
-  margin-top: 50px;
-}
-
-a.btn.btn-branding:hover {
-  color: white;
-  background:goldenrod;
-}
-
-a.btn.btn-branding-2:hover {
-  color: white;
-  background: goldenrod;
-}
-
-a.btn.btn-branding-2 {
-  border-radius: 30px;
-  padding: 15px 30px;
-  line-height: 27px;
-  border: 1px solid var(--primary-color);
-  font-size: 18px;
-  background-color: goldenrod;
-
-
-}
-
-div.project-description {
-  padding: 120px 60px 0;
-}
-
-@media (max-width: 900px) {
-  div.project-description {
-      padding: 60px 20px 0;
-      text-align: center;
-      margin: auto;
-  }
-
-  div.project-description.next.mb-5.mt-5 {
-      padding: 0;
-      text-align: center;
-  }
-  h2.next.mb-5.mt-5 {
-      text-align: center;
-  }
-
-  .container-main h1 {
-      font-size: 45px;
-      line-height: 2;
-      color: goldenrod;
-  }
-
-  .container-main h2 {
-  font-weight: bold;
-
-  }
-
-  .next {
-      font-size: 45px;
-  }
-
-  div.content {
-      text-align: center;
-      padding: 0;
-  }
-
-  nav a {
-      font-size: 12px;
-
-  }
-
-  div.content h1 {
-      font-size: 45px;
-      line-height: 2;
-  }
-}
-
-.content-container {
-  padding: 60px 20px;
-}
-
-.content h1 {
-  font-size: 64px;
-  line-height: 80px;
-}
-
-.content h2 {
-  font-size: 18px;
-  font-family: var(--default-font-family);
-}
-
-.content h3 {
-  font-size: 24px;
-  font-family: var(--default-font-family);
-  line-height: 1.5;
-  margin: 20px 0 0;
-}
-
-.content p {
-  font-size: 14px;
-  font-family: var(--default-font-family);
-  font-weight: bold;
-}
-
-.content {
-  margin: 30px;
-}
-
-
-nav {
-  padding: 20px 0;
-}
-
-nav ul {
+/* Target the ul element directly following the h2 to remove bullets and style the list */
+h2+ul {
+  list-style-type: none;
+  /* Removes bullets */
   padding: 0;
-  margin: 0;
 }
 
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #c0c0c0;
 }
 
-nav a {
-  text-decoration: none;
-  color:black;
-}
-
-nav a:hover,
-nav li.active a {
-  color: var(--primary-color);
-  transition: all 100ms ease-in-out;
-}
-
-footer {
-  margin: 60px 0;
-}
-
-footer .contact-box {
-  background: var(--testing-color);
-  padding: 30px 120px;
-  border-radius: 10px;
-}
-
-footer .contact-box p {
-  margin: 0;
-}
-
-footer .email-l {
-  text-decoration: none;
-  font-size: 24px;
-  color: black;
+.header {
   text-align: center;
-  font-family: var(--default-font-family);
-  font-weight: bold;
+  margin-bottom: 20px;
+  color: black
 }
 
-footer .email-l:hover {
-   color: var(--primary-color);
-   transition: all 100ms ease-in-out;
-
+.contacts a,
+.project-description a {
+  margin-right: 10px;
 }
 
-footer .social-media a {
-  margin: 0 20px;
-  background: var(--secondary-color);
+.contacts {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(53, 4, 53);
+}
+
+.introduction,
+.project-description {
+  margin-bottom: 20px;
+  padding: auto;
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* Space between rows */
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  /* Take up half the width of the container */
+  max-width: 50%;
+  /* Take up half the width of the container */
+  padding: 15px;
+  /* Space inside columns */
+}
+
+@media (min-width: 992px) {
+  .d-none.d-lg-block {
+    display: block;
+  }
+}
+
+.icon-style {
+  font-size: 40px;
+  /* Adjust icon size */
+  margin: 0 10px;
+  color: purple;
+}
+
+.img-fluid {
+  min-height: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  
+}
+a.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+  background-color:violet;
+  /* Darker shade on hover */
+}
+.intro{
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: auto;
+  text-align: center;
+  list-style: none;
+}
+.project-description ul li {
+  position: relative;
+  padding-left: auto;
+  margin-top: 20px;
+  list-style-type: none;
+  font-weight: 200;
   font-size: 18px;
-  padding: 10px 14px;
-  border-radius: 50%;
-  transition: all 100ms ease-in-out;
+  color: black;
+  line-height: 1.2em;
 }
 
-footer .social-media a:hover {
-  color: white;
-  background: var(--primary-color);
+
+.footer .tech-stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  flex-wrap: wrap;
+  /* Allow items to wrap as needed */
+ 
+}
+
+.footer .tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.footer .tech-item i {
+  font-size: 40px;
+  /* Adjust icon size as needed */
+  margin-bottom: 5px;
+  /* Space between icon and text */
+
+}
+
+.footer .tech-item span {
+  font-size: 20px;
+  /* Adjust text size as needed */
+}
+.footer {
+  color: rgb(78, 13, 78);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.footer h3 {
+  margin-bottom: 20px;
 }
