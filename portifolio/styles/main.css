@@ -75,7 +75,11 @@ h2+ul {
     display: block;
   }
 }
-
+@media (max-width: 768px) {
+  .d-none.d-md-block {
+    display: block;
+  }
+}
 .icon-style {
   font-size: 40px;
   /* Adjust icon size */
